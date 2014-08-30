@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BolaoNoCampo</string>
+    <string name="app_name">Bolão no Campo</string>
+    <string name="app_id">1419968408235941</string>
+
+    <string name="activity_competition_list_name">Competitions</string>
+    <string name="activity_event_list_name">Events</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_logout">Logout</string>
 </resources>

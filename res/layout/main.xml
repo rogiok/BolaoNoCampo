@@ -2,11 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:gravity="center">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World, MainActivity" />
+        android:text="Bolão no Campo"
+        android:id="@+id/appTitleView"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Facebook"
+        android:id="@+id/loginButton"
+        android:textColor="@android:color/white"
+        android:background="#3b5998"
+        android:padding="10dp"
+        android:layout_gravity="center" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true" />
+
+
 </LinearLayout>
 

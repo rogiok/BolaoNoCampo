@@ -5,16 +5,42 @@
     android:versionName="1.0">
 
     <uses-sdk android:minSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher">
+
         <activity
             android:name="MainActivity"
-            android:label="@string/app_name">
+            android:theme="@style/Main"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="CompetitionListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Others"/>
+        <activity
+            android:name="EventListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Others"
+            android:parentActivityName="CompetitionListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="CompetitionListActivity" />
+        </activity>
+
+        <activity android:name="com.facebook.LoginActivity" android:theme="@style/Main"/>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
     </application>
+
 </manifest>
